@@ -1,7 +1,6 @@
 import styled from 'styled-components/macro';
 
 export const Container = styled.div`
-display: flex;
 border-bottom: 7px solid #222;
 `; 
 
@@ -29,7 +28,7 @@ export const Header = styled.div`
 display: flex;
 justify-content: space-between;
 cursor: pointer;
-margin-bottom: 1px;
+margin-bottom: 10px;
 font-size: 26px;
 font-weight: normal;
 background: #303030;
@@ -58,6 +57,7 @@ background: #303030;
 padding: 0.8em 2.2em 0.8em 1.2em;
 white-space: pre-wrap;
 user-select: none;
+margin-top: -9px;
 
 @media (max-width: 600px) {
     font-size: 16px;
