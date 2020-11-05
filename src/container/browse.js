@@ -97,12 +97,9 @@ export function BrowseContainer({slides}) {
                 </Card.Item>
               ))}
             </Card.Entities>
-            { /* <Card.Feature category={category}>
-                <Player>
-                    <Player.Button />
-                    <Player.Vide src="vide/bunny.mp4" />
-                </Player>
-              </Card.Feature> */}
+            {  <Card.Feature category={category}>
+                <p>Hello</p>
+              </Card.Feature> }
                 </Card>
             ))}
         </Card.Group>
