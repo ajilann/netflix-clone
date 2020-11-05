@@ -134,7 +134,7 @@ max-width: 130px;
 font-size: 20px;
 margin-top: 30px;
 cursor: pointer;
-transition: background-color 1s ease;
+transition: background-color 0.2s;
 
 &:hover {
     background-color: #ff1e1e;
