@@ -10,7 +10,7 @@ exports[`<Form /> renders the <Form /> with an error 1`] = `
     Your email address is already being used
   </div>
   <button
-    class="form__Submit-sc-1jfxee4-8 glHDZR"
+    class="form__Submit-sc-1jfxee4-8 itDfDb"
     type="submit"
   >
     Sign In

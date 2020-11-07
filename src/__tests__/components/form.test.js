@@ -5,13 +5,12 @@ import { Form } from '../../components';
 jest.mock('react-router-dom');
 
 describe('<Form />', () => {
-    it('renders the <Form /> with populated data', () => {
-
-    const { container, getByText, getByPlaceholderText } = render(
+  it('renders the <Form /> with populated data', () => {
+    const { container, getByText, getByPlaceholderText } =render(
+      
       <Form>
         <Form.Title>Sign In Now</Form.Title>
-
-        <Form.Base>
+       <Form.Base>
           <Form.Input placeholder="Email address" onChange={() => {}} />
           <Form.Input type="password" placeholder="Password" onChange={() => {}} />
           <Form.Submit type="submit" disabled>
@@ -25,9 +24,8 @@ describe('<Form />', () => {
         <Form.TextSmall>
           This page is protected by Google reCAPTCHA to ensure you're not a bot. Learn more.
         </Form.TextSmall>
-      </Form>
+      </Form> 
     );
-
     expect(
       getByText("This page is protected by Google reCAPTCHA to ensure you're not a bot. Learn more.")
     ).toBeTruthy();
@@ -40,7 +38,7 @@ describe('<Form />', () => {
   });
 
   it('renders the <Form /> with an error', () => {
-    const { container, getByText, queryByText } = render(
+    const { container, getByText, queryByText } =render(
       <Form>
         <Form.Error>Your email address is already being used</Form.Error>
         <Form.Submit type="submit">Sign In</Form.Submit>
