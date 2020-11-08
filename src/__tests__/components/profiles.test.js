@@ -2,6 +2,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import { Profiles } from '../../components';
 
+jest.mock('react-router-dom');
 describe('<Profiles />', () => {
   it('renders the <Profiles /> with populated data', () => {
     const { container, getByText, getByTestId } = render(
@@ -16,9 +17,9 @@ describe('<Profiles />', () => {
       </Profiles>
     );
 
-    expect(getByText("Who's watching?"));
+    expect(getByText("Who's watching?")).toBeTruthy();
     expect(getByTestId('profile-picture')).toBeTruthy();
-    expect(getByText('Karl'));
+    expect(getByText('Karl')).toBeTruthy();
     expect(container.firstChild).toMatchSnapshot();
   });
 
@@ -35,9 +36,9 @@ describe('<Profiles />', () => {
       </Profiles>
     );
 
-    expect(getByText("Who's watching?"));
+    expect(getByText("Who's watching?")).toBeTruthy();
     expect(getByTestId('profile-picture-misc')).toBeTruthy();
-    expect(getByText('Karl'));
+    expect(getByText('Karl')).toBeTruthy();
     expect(container.firstChild).toMatchSnapshot();
   });
 });
