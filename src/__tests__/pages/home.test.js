@@ -11,5 +11,5 @@ test('renders the homepage', () => {
   expect(getAllByPlaceholderText('Email address')).toBeTruthy();
   expect(getAllByText('Try it now')).toBeTruthy();
   expect(getAllByText('Ready to watch? Enter your email to create or restart your membership.')).toBeTruthy();
-  
+
 });

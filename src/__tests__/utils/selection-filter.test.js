@@ -1,9 +1,8 @@
-import  selectionFilter  from '../../utils';
+import { selectionFilter }  from '../../utils';
 
 test('selectionFilter with legitimate data', () => {
-  const series = [
-    
-        {
+  const series = [ 
+    {
           id: 'series-1x',
           title: 'The Best Series',
           description: 'Great series',
@@ -12,6 +11,7 @@ test('selectionFilter with legitimate data', () => {
           slug: 'best-series-ever',
         },
   ];
+
   const films = [
     {
       id: 'film-1x',
@@ -26,9 +26,9 @@ test('selectionFilter with legitimate data', () => {
   const slides = selectionFilter({ series, films });
   console.log('slides, slides');
   expect(slides.series[0].title).toBe('Documentaries');
-  expect(slides.series[0].data[0]).toBe('Great series...');
+  expect(slides.series[0].data[0].description).toBe('Great series');
   expect(slides.series[0].data[0].genre).toBe('documentaries');
-  expect(slides.series[0].data[0].maturity).toBe('15');
+  expect(slides.series[0].data[0].maturity).toBe('18');
   expect(slides.series[0].data[0].slug).toBe('best-series-ever');
 
   expect(slides.films[0].title).toBe('Drama');

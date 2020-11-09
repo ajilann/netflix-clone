@@ -17,3 +17,40 @@ exports[`<Form /> renders the <Form /> with an error 1`] = `
   </button>
 </div>
 `;
+
+exports[`<Form /> renders the <Form /> with populated data 1`] = `
+<div
+  class="form__Container-sc-1jfxee4-0 cVQsFY"
+>
+  <h1
+    class="form__Title-sc-1jfxee4-3 jaGbQm"
+  >
+    Sign In Now
+  </h1>
+  <form
+    class="form__Base-sc-1jfxee4-2 kjVudt"
+  >
+    <input
+      class="form__Input-sc-1jfxee4-7 cDJArU"
+      placeholder="Email address"
+    />
+    <input
+      class="form__Input-sc-1jfxee4-7 cDJArU"
+      placeholder="Password"
+      type="password"
+    />
+    <button
+      class="form__Submit-sc-1jfxee4-8 itDfDb"
+      disabled=""
+      type="submit"
+    >
+      Sign In
+    </button>
+  </form>
+  <p
+    class="form__TextSmall-sc-1jfxee4-5 dimQHr"
+  >
+    This page is protected by Google reCAPTCHA to ensure you're not a bot. Learn more.
+  </p>
+</div>
+`;
